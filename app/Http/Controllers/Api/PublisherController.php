@@ -6,9 +6,19 @@ use App\Models\Publisher;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Auth;
 
 class PublisherController extends Controller
 {
+    public function __construct() {
+        if(empty(Auth::guard('web')->check())) {
+            return response()->json([
+                'status'    => false,
+                'message'   => 'Token or authorization incomplete.'
+            ], 403)->throwResponse();
+        }
+    }
+
     public function index()
     {
         $data = Publisher::with('book')->get();

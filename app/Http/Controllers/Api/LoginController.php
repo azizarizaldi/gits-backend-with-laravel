@@ -83,13 +83,14 @@ class LoginController extends Controller
         config()->set('jwt.ttl', 60*24*7);
         return response()->json(
             [
-                'success'        => $status,
+                'status'         => $status,
+                'message'        => "Login successfully!",
                 'token'          => $token,
                 'token_type'     => 'bearer',
                 'token_validity' => ($this->guard()->factory()->getTTL()),
-                'name'           => $this->guard()->user()->first_name.' '.$this->guard()->user()->last_name,
+                'name'           => $this->guard()->user()->name,
                 'email'          => $this->guard()->user()->email,
-                'uid'            => $this->guard()->user()->uid
+                'uid'            => $this->guard()->user()->id
             ]
         );
 
