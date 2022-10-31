@@ -55,6 +55,16 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvc2lnbi1pbiIsImlhdCI6MTY2NzIwOTU5MywiZXhwIjoxNjk4NzQ1NTkzLCJuYmYiOjE2NjcyMDk1OTMsImp0aSI6Im4yYjQyU3lpVGtBM3I1eTUiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.3pYMkAAy2Ava-qclSrRGAUTCCUG0iIEQMOclbg0wLyQ",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"body": {
@@ -69,15 +79,14 @@
 							]
 						},
 						"url": {
-							"raw": "localhost:8000/api/author/",
+							"raw": "localhost:8000/api/author",
 							"host": [
 								"localhost"
 							],
 							"port": "8000",
 							"path": [
 								"api",
-								"author",
-								""
+								"author"
 							]
 						}
 					},
@@ -86,6 +95,16 @@
 				{
 					"name": "detail by id",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvc2lnbi1pbiIsImlhdCI6MTY2NzIwOTU5MywiZXhwIjoxNjk4NzQ1NTkzLCJuYmYiOjE2NjcyMDk1OTMsImp0aSI6Im4yYjQyU3lpVGtBM3I1eTUiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.3pYMkAAy2Ava-qclSrRGAUTCCUG0iIEQMOclbg0wLyQ",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -106,6 +125,16 @@
 				{
 					"name": "add",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvc2lnbi1pbiIsImlhdCI6MTY2NzIwOTU5MywiZXhwIjoxNjk4NzQ1NTkzLCJuYmYiOjE2NjcyMDk1OTMsImp0aSI6Im4yYjQyU3lpVGtBM3I1eTUiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.3pYMkAAy2Ava-qclSrRGAUTCCUG0iIEQMOclbg0wLyQ",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -136,6 +165,16 @@
 				{
 					"name": "update",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvc2lnbi1pbiIsImlhdCI6MTY2NzIwOTU5MywiZXhwIjoxNjk4NzQ1NTkzLCJuYmYiOjE2NjcyMDk1OTMsImp0aSI6Im4yYjQyU3lpVGtBM3I1eTUiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.3pYMkAAy2Ava-qclSrRGAUTCCUG0iIEQMOclbg0wLyQ",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -167,6 +206,16 @@
 				{
 					"name": "delete",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvc2lnbi1pbiIsImlhdCI6MTY2NzIwOTU5MywiZXhwIjoxNjk4NzQ1NTkzLCJuYmYiOjE2NjcyMDk1OTMsImp0aSI6Im4yYjQyU3lpVGtBM3I1eTUiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.3pYMkAAy2Ava-qclSrRGAUTCCUG0iIEQMOclbg0wLyQ",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -196,6 +245,16 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvc2lnbi1pbiIsImlhdCI6MTY2NzIwOTU5MywiZXhwIjoxNjk4NzQ1NTkzLCJuYmYiOjE2NjcyMDk1OTMsImp0aSI6Im4yYjQyU3lpVGtBM3I1eTUiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.3pYMkAAy2Ava-qclSrRGAUTCCUG0iIEQMOclbg0wLyQ",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"body": {
